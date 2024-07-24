@@ -931,15 +931,15 @@
     )
   )
 
-(defpart 223
+(defpart 223 ;; RGBA here controls Blaster Mod projectile tip color
   :init-specs ((:texture (new 'static 'texture-id :index #x45 :page #xc))
     (:birth-func 'birth-func-set-quat)
     (:num 1.0)
     (:scale-x (meters 0.5))
     (:scale-y (meters 16))
-    (:r 128.0)
-    (:g 128.0)
-    (:b 128.0)
+    (:r 255.0)
+    (:g 255.0)
+    (:b 255.0)
     (:a 32.0 64.0)
     (:scalevel-x (meters -0.005))
     (:fade-a -3.2)
@@ -948,7 +948,7 @@
     )
   )
 
-(defpart 224
+(defpart 224 ;; RGBA here controls Blaster Mod projectile outer glow color
   :init-specs ((:texture (new 'static 'texture-id :index #xca :page #xc))
     (:num 1.0)
     (:scale-x (meters 6) (meters 0.2))
@@ -957,7 +957,7 @@
     (:scale-y :copy scale-x)
     (:r 255.0)
     (:g 255.0)
-    (:b 0.0)
+    (:b 255.0)
     (:a 6.0)
     (:omega (degrees 6763.5))
     (:fade-a -0.3)
@@ -966,27 +966,27 @@
     )
   )
 
-(defpart 225
+(defpart 225 ;; RGBA here controls Blaster Mod projectile 'effects/explosion-nebula' texture color
   :init-specs ((:texture (new 'static 'texture-id :index #x33 :page #xc))
     (:num 0.5 0.5)
     (:scale-x (meters 0.5) (meters 0.5))
     (:rot-z (degrees 0) (degrees 3600))
     (:scale-y :copy scale-x)
-    (:r 255.0)
-    (:g 255.0)
-    (:b 128.0)
+    (:r 0.0)
+    (:g 0.0)
+    (:b 0.0)
     (:a 32.0 32.0)
     (:scalevel-x (meters 0.013333334) (meters 0.006666667))
     (:scalevel-y :copy scalevel-x)
-    (:fade-g -2.55 -1.28)
-    (:fade-b -1.28)
+    (:fade-g 0.0 0.0)
+    (:fade-b 0.0)
     (:fade-a -0.64)
     (:timer (seconds 0.335))
     (:flags (sp-cpuinfo-flag-2 sp-cpuinfo-flag-3 sp-cpuinfo-flag-14))
     )
   )
 
-(defpart 226
+(defpart 226 ;; RGBA here controls Blaster Mod projectile 'effects/hotdots' starting color (fade-r/g/b changes the color over time - set all to 0 to prevent fade)
   :init-specs ((:texture (new 'static 'texture-id :index #xbd :page #xc))
     (:num 4.0 8.0)
     (:z (meters 0) (meters -4))
@@ -994,15 +994,15 @@
     (:rot-x 4)
     (:rot-z (degrees 0) (degrees 3600))
     (:scale-y :copy scale-x)
-    (:r 128.0)
-    (:g 128.0)
-    (:b 128.0)
+    (:r 255.0)
+    (:g 255.0)
+    (:b 255.0)
     (:a 64.0)
     (:scalevel-x (meters -0.0020833334))
     (:scalevel-y :copy scalevel-x)
-    (:fade-r 1.6)
-    (:fade-g -1.6)
-    (:fade-b -3.2 -6.4)
+    (:fade-r 0.0)
+    (:fade-g 0.0)
+    (:fade-b 0.0 0.0)
     (:accel-y (meters -0.000033333334) (meters -0.00033333333))
     (:timer (seconds 0.535))
     (:flags (sp-cpuinfo-flag-0 sp-cpuinfo-flag-2 sp-cpuinfo-flag-3))
@@ -1010,15 +1010,15 @@
     )
   )
 
-(defpart 227
+(defpart 227 ;; RGBA here controls Blaster Mod muzzle flare color
   :init-specs ((:texture (new 'static 'texture-id :index #x46 :page #xc))
     (:birth-func 'birth-func-set-quat)
     (:num 1.0)
     (:scale-x (meters 1))
     (:scale-y (meters 4.5))
-    (:r 128.0)
-    (:g 128.0)
-    (:b 128.0)
+    (:r 255.0)
+    (:g 255.0)
+    (:b 255.0)
     (:a 128.0)
     (:scalevel-x (meters 0.05))
     (:fade-a -3.6571429)
@@ -1096,7 +1096,7 @@
     )
   )
 
-(defpart 228
+(defpart 228 ;; RGBA here controls impact explosion particles trail color - note the fade-g/a values
   :init-specs ((:texture (new 'static 'texture-id :index #xc9 :page #xc))
     (:num 0.0 0.5)
     (:scale-x (meters 0.15) (meters 0.1))
@@ -1105,10 +1105,10 @@
     (:scale-y :copy scale-x)
     (:r 255.0)
     (:g 255.0)
-    (:b 0.0)
+    (:b 255.0)
     (:a 64.0)
     (:rotvel-z (degrees -1.2) (degrees 2.4))
-    (:fade-g -3.4 -3.4)
+    (:fade-g 0.0 0.0)
     (:fade-a -0.21333334 -1.28)
     (:accel-y (meters -0.00033333333) (meters -0.00083333335))
     (:friction 0.95 0.02)
@@ -1117,7 +1117,7 @@
     )
   )
 
-(defpart 234
+(defpart 234 ;; RGBA here controls impact explosion particles START color - note the fade-g value
   :init-specs ((:texture (new 'static 'texture-id :index #xc9 :page #xc))
     (:num 4.0 12.0)
     (:scale-x (meters 2.5))
@@ -1125,11 +1125,11 @@
     (:scale-y (meters 0.225) (meters 0.05))
     (:r 255.0)
     (:g 255.0)
-    (:b 0.0)
+    (:b 255.0)
     (:a 64.0 32.0)
     (:omega (degrees 0.016875) (degrees 0.03375))
     (:vel-y (meters 0.2))
-    (:fade-g -1.7 -1.7)
+    (:fade-g 0.0 0.0)
     (:accel-y (meters -0.0033333334) (meters -0.0016666667))
     (:friction 0.95 0.02)
     (:timer (seconds 0.667) (seconds 0.33))
@@ -1142,11 +1142,11 @@
     )
   )
 
-(defpart 238
+(defpart 238 ;; RGBA here controls impact explosion particles END color
   :init-specs ((:fade-a -0.96 -0.96))
   )
 
-(defpart 231
+(defpart 231 ;; RGBA here controls Blaster Mod projectile IMPACT 'effects/explosion-nebula' texture color
   :init-specs ((:texture (new 'static 'texture-id :index #x33 :page #xc))
     (:num 1.0)
     (:scale-x (meters 1))
@@ -1154,8 +1154,8 @@
     (:rot-z (degrees 0) (degrees 360))
     (:scale-y :copy scale-x)
     (:r 255.0)
-    (:g 128.0 128.0)
-    (:b 0.0 32.0)
+    (:g 255.0 255.0)
+    (:b 255.0 255.0)
     (:a 24.0)
     (:scalevel-x (meters 0.33333334))
     (:scalevel-y :copy scalevel-x)
@@ -1166,33 +1166,33 @@
     )
   )
 
-(defpart 233
+(defpart 233 ;; RGBA here controls Blaster Mod ??? color
   :init-specs ((:num 1.0)
     (:rot-x 12)
-    (:r 4096.0)
-    (:g 2867.2)
-    (:b 1638.4)
-    (:fade-b 5.12)
+    (:r 255.0)
+    (:g 255.0)
+    (:b 255.0)
+    (:fade-b 0.0)
     (:timer (seconds 0.8))
     (:flags (distort))
     (:rotate-y (degrees 0) (degrees 360))
     )
   )
 
-(defpart 232
+(defpart 232 ;; RGBA here controls Blaster Mod projectile impact fading particles START color
   :init-specs ((:texture (new 'static 'texture-id :index #xc9 :page #xc))
     (:num 0.5)
     (:scale-x (meters 0.5) (meters 0.3))
     (:scale-y :copy scale-x)
     (:r 255.0)
-    (:g 128.0 128.0)
-    (:b 32.0 8.0)
+    (:g 255.0 255.0)
+    (:b 255.0 255.0)
     (:a 96.0)
     (:vel-y (meters 0.026666667) (meters 0.053333335))
     (:scalevel-x (meters -0.0005) (meters -0.0005))
     (:scalevel-y :copy scalevel-x)
-    (:fade-g -1.7)
-    (:fade-b -0.53333336)
+    (:fade-g 0.0)
+    (:fade-b 0.0)
     (:accel-y (meters -0.00016666666) (meters -0.00033333333))
     (:friction 0.7)
     (:timer (seconds 1))
@@ -1204,26 +1204,26 @@
     )
   )
 
-(defpart 239
+(defpart 239 ;; RGBA here controls Blaster Mod projectile impact fading particles END color
   :init-specs ((:fade-r -1.28) (:fade-a -0.96))
   )
 
-(defpart 230
+(defpart 230 ;; RGBA here controls Blaster Mod projectile impact flash START color
   :init-specs ((:texture (new 'static 'texture-id :index #xbb :page #xc))
     (:num 2.0)
     (:scale-x (meters 1))
     (:rot-x (degrees 2.25))
     (:rot-z (degrees 0) (degrees 360))
     (:scale-y :copy scale-x)
-    (:r 255.0)
-    (:g 255.0)
-    (:b 32.0 8.0)
+    (:r 0.0)
+    (:g 0.0)
+    (:b 0.0 0.0)
     (:a 24.0)
     (:scalevel-x (meters 0.12857144))
     (:rotvel-z (degrees -0.3) (degrees 0.6))
     (:scalevel-y :copy scalevel-x)
-    (:fade-g -3.6571429)
-    (:fade-b -0.9142857)
+    (:fade-g 0.0)
+    (:fade-b 0.0)
     (:timer (seconds 1.335))
     (:flags (sp-cpuinfo-flag-0 sp-cpuinfo-flag-2 glow))
     (:userdata 4096.0)
@@ -1232,33 +1232,33 @@
     )
   )
 
-(defpart 240
+(defpart 240 ;; RGBA here controls Blaster Mod projectile impact flash END color
   :init-specs ((:scale-x (meters 4.5))
     (:scale-y :copy scale-x)
     (:scalevel-x (meters -0.010958904))
     (:scalevel-y :copy scalevel-x)
-    (:fade-g -0.38356164)
+    (:fade-g 0.0)
     (:fade-b 0.0)
-    (:fade-a -0.13150685)
+    (:fade-a 0.0)
     )
   )
 
-(defpart 236
+(defpart 236 ;; RGBA here controls Blaster Mod projectile impact with OBJECT flash START color
   :init-specs ((:texture (new 'static 'texture-id :index #xbb :page #xc))
     (:num 2.0)
     (:scale-x (meters 1))
     (:rot-x (degrees 2.25))
     (:rot-z (degrees 0) (degrees 360))
     (:scale-y :copy scale-x)
-    (:r 255.0)
-    (:g 255.0)
-    (:b 32.0 8.0)
+    (:r 0.0)
+    (:g 0.0)
+    (:b 0.0 0.0)
     (:a 24.0)
     (:scalevel-x (meters 0.12857144))
     (:rotvel-z (degrees -0.3) (degrees 0.6))
     (:scalevel-y :copy scalevel-x)
-    (:fade-g -3.6571429)
-    (:fade-b -0.9142857)
+    (:fade-g 0.0)
+    (:fade-b 0.0)
     (:timer (seconds 1.335))
     (:flags (sp-cpuinfo-flag-0 sp-cpuinfo-flag-2 glow))
     (:userdata 4096.0)
@@ -1267,7 +1267,7 @@
     )
   )
 
-(defpart 241
+(defpart 241 ;; RGBA here controls Blaster Mod projectile impact with OBJECT flash END color
   :init-specs ((:scale-x (meters 4.5))
     (:scale-y :copy scale-x)
     (:scalevel-x (meters -0.05))
@@ -1278,7 +1278,7 @@
     )
   )
 
-(defpart 229
+(defpart 229 ;; RGBA here controls Blaster Mod projectile impact crater with WALL flash AND begin fade color
   :init-specs ((:texture (new 'static 'texture-id :index #xca :page #xc))
     (:num 1.0)
     (:scale-x (meters 0.5))
@@ -1296,39 +1296,39 @@
     (:flags (sp-cpuinfo-flag-0 sp-cpuinfo-flag-2 sp-cpuinfo-flag-3 glow))
     (:userdata 4096.0)
     (:next-time (seconds 0.05))
-    (:next-launcher 242)
+    (:next-launcher 242) ;; proceeds to defpart 242 to BEGIN fade coloration for WALL impact crater
     )
   )
 
-(defpart 242
+(defpart 242 ;; Begin fade coloration for WALL impact crater
   :init-specs ((:scale-x (meters 3.5))
     (:scale-y :copy scale-x)
     (:scalevel-x (meters -0.02))
     (:scalevel-y :copy scalevel-x)
-    (:fade-b -5.1)
+    (:fade-b 0.0)
     (:next-time (seconds 0.167))
-    (:next-launcher 243)
+    (:next-launcher 243) ;; proceeds to defpart 243 to CONTINUE fade coloration for WALL impact crater
     )
   )
 
-(defpart 243
+(defpart 243 ;; Continue fade coloration for WALL impact crater
   :init-specs ((:scale-x (meters 2))
     (:scale-y :copy scale-x)
     (:scalevel-x (meters -0.0018691589))
     (:scalevel-y :copy scalevel-x)
     (:fade-r 0.0)
-    (:fade-g -0.14222223)
+    (:fade-g 0.0)
     (:fade-b 0.0)
     (:next-time (seconds 1.5))
-    (:next-launcher 244)
+    (:next-launcher 244) ;; proceeds to defpart 244 to CONTINUE fade coloration for WALL impact crater
     )
   )
 
-(defpart 244
-  :init-specs ((:fade-g -2.2588236) (:fade-a -0.7529412))
+(defpart 244 ;; FINAL fade coloration for Blaster Mod projectile impact crater with WALL
+  :init-specs ((:fade-g 0.0) (:fade-a -0.7529412))
   )
 
-(defpart 235
+(defpart 235 ;; RGBA here controls Blaster Mod projectile impact with OBJECT flash AND begin fade color
   :init-specs ((:texture (new 'static 'texture-id :index #xca :page #xc))
     (:num 1.0)
     (:scale-x (meters 0.5))
@@ -1346,23 +1346,23 @@
     (:flags (sp-cpuinfo-flag-0 sp-cpuinfo-flag-2 sp-cpuinfo-flag-3 glow))
     (:userdata 4096.0)
     (:next-time (seconds 0.05))
-    (:next-launcher 245)
+    (:next-launcher 245) ;; proceeds to defpart 245 to BEGIN fade coloration for OBJECT impact crater
     )
   )
 
-(defpart 245
+(defpart 245 ;; Begin fade coloration for OBJECT impact crater
   :init-specs ((:scale-x (meters 3.5))
     (:scale-y :copy scale-x)
     (:scalevel-x (meters -0.04))
     (:scalevel-y :copy scalevel-x)
-    (:fade-b -5.1)
+    (:fade-b 0.0)
     (:next-time (seconds 0.167))
-    (:next-launcher 246)
+    (:next-launcher 246) ;; proceeds to defpart 246 to CONTINUE fade coloration for OBJECT impact crater
     )
   )
 
-(defpart 246
-  :init-specs ((:fade-g -4.8) (:fade-a -1.6))
+(defpart 246 ;; FINAL fade coloration for Blaster Mod projectile impact crater with OBJECT
+  :init-specs ((:fade-g 0.0) (:fade-a -1.6))
   )
 
 (defpartgroup group-gun-yellow-shot-die

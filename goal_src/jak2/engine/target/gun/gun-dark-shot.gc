@@ -14,8 +14,8 @@
 (set! (-> *lightning-spec-id-table* 11) (new 'static 'lightning-spec
                                           :name "lightning-dark-shot-attack"
                                           :flags (lightning-spec-flags lsf0)
-                                          :start-color (new 'static 'rgba :r #xff :g #xff :b #xff :a #x80)
-                                          :end-color (new 'static 'rgba :r #xff :g #xff :b #xff :a #x80)
+                                          :start-color (new 'static 'rgba :r #xcc :g #xcc :b #xcc :a #x80)
+                                          :end-color (new 'static 'rgba :r #xcc :g #xcc :b #xcc :a #x80)
                                           :fade-to-color (new 'static 'rgba :r #xbf :b #x8f :a #x5)
                                           :fade-start-factor 0.2
                                           :texture (new 'static 'texture-id :index #x83 :page #xc)
