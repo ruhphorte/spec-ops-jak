@@ -229,7 +229,7 @@
   (let ((v1-0 arg0))
     (cond
       ((zero? v1-0)
-       (play-sound-file "custom_assets/jak2/sfx/gun/bullet-suppressed.mp3" 40)
+       (play-sound-file "data/custom_assets/jak2/sfx/gun/bullet-suppressed.mp3" 40)
        )
       ((= v1-0 (projectile-options lose-altitude))
        (sound-play "yellow-gun-burn")
