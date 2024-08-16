@@ -22,12 +22,12 @@ jobs:
     uses: open-goal/mod-bundling-tools/.github/workflows/mod-bundler.yml@v1
     with:
       semverBump: ${{ inputs.bump }}
-      metadataName: "Test Mod Bundle"
-      metadataDescription: "This is a test mod bundle. 2"
-      metadataSupportedGames: "jak1"
-      metadataAuthors: "barg,vaser"
-      metadataTags: "rng,gameplay-mod"
-      metadataWebsiteUrl: "https://www.example.com/this/is/optional"
+      metadataName: "Specs Ops Jak"
+      metadataDescription: "Immediately after being rescued by Daxter, Jak is fitted with an all black Spec Ops outfit and a new weapon. The Blaster Mod has been replaced with a fully automatic suppressed XM Nova assault rifle that fires depleted light eco rounds. These light eco rounds will easily take down anything in your way."
+      metadataSupportedGames: "jak2"
+      metadataAuthors: "Ruh"
+      metadataTags: "texture-mod,gameplay-mod"
+      metadataWebsiteUrl: "https://github.com/ruhphorte/spec-ops-jak/blob/main/README.md"
       skipMacOS: true
       skipLinux: true
       toolingBinaryDir: "out/build/Release/bin"
